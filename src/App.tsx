@@ -6,20 +6,20 @@ import { Gallery } from "./components/Gallery/Gallery";
 import { Contact } from "./components/Contact/Contact";
 import { Products } from "./Products/Products";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Footer } from "./components/Footer/Footer";
 
 export default function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
         <Route path="/products" component={Products} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
-        <Route exact path="/" component={Home} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

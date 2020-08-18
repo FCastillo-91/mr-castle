@@ -1,36 +1,37 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import logo from '../../ui/logo/MRCASTLE_Logo_Design.png';
 
 export const NavBar = () => {
   return (
     <div className="sticky-top bg-dark p-4">
       <nav className="navbar navbar-dark bg-dark">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <div className="nav-item">
+          <a className="nav-link" href="/">
             <img
-              src="/docs/4.5/assets/brand/bootstrap-solid.svg"
-              width="30"
-              height="30"
-              alt=""
+              src={logo}
+              width="70"
+              height="70"
+              alt="Mr Castle small logo"
               loading="lazy"
             />
           </a>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="nav-item">
           <Link to="/">Home</Link>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="nav-item">
           <Link to="/about">About</Link>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="nav-item">
           <Link to="/products">Products</Link>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="nav-item">
           <Link to="/gallery">Gallery</Link>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="nav-item">
           <Link to="/contact">Contact</Link>
-        </li>
+        </div>
       </nav>
     </div>
   );
