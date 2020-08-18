@@ -6,6 +6,7 @@ import {
   useParams,
   useRouteMatch,
 } from "react-router-dom";
+import { ProductListings } from "./ProductListings/ProductListings";
 
 export const Products = () => {
   let match = useRouteMatch();
@@ -13,7 +14,7 @@ export const Products = () => {
   return (
     <div>
       <h2>Products</h2>
-
+      <ProductListings />
       <ul>
         <li>
           <Link to={`${match.url}/components`}>Components</Link>

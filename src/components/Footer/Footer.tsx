@@ -22,6 +22,16 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <div
+        className="sub-footer-container"
+        style={{
+          textAlign: "center",
+          backgroundColor: "#343a40",
+          color: "white",
+        }}
+      >
+        <p>©2020 CastilloCreative. All Rights Reserved</p>
+      </div>
     </footer>
   );
 };
